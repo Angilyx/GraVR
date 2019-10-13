@@ -26,11 +26,9 @@ $gray: rgb(82, 82, 82);
 		right: 50px;
 	}
 
-	li {
-		list-style-type: none;
-	}
+	li {list-style-type: none;}
 
-	header a {
+	header nav a {
 		color: black;
 		text-decoration: none;
 		margin: 10px;
@@ -39,18 +37,13 @@ $gray: rgb(82, 82, 82);
 		font-weight: bold;
 	}
 
-	header a:hover {
-		color: main;
-	}
+	header nav a:hover {color: main;}
 
-	nav {
-		@include flex-center;
-	}
+	header img a {margin:0;}
 
-	.menu {
-		@include flex-center;
-		flex-direction: row;
-	}
+	nav {@include flex-center;}
+
+	.menu {@include flex-center;flex-direction: row;}
 
 	.contact-button {
 		background-color: $main;
@@ -91,9 +84,7 @@ $gray: rgb(82, 82, 82);
 		padding: 5% 2%;
 	}
 
-	.top-section h1 {
-		text-transform: uppercase;
-	}
+	.top-section h1 {text-transform: uppercase;}
 
 	.main-section {
 		color: $gray;
@@ -107,9 +98,7 @@ $gray: rgb(82, 82, 82);
 		text-transform: uppercase;
 	}
 
-	.main-section p {
-		padding: 0 25% 10%;
-	}
+	.main-section p {padding: 0 25% 10%;}
 
 	/* Contact Form Start */
 
@@ -129,13 +118,9 @@ $gray: rgb(82, 82, 82);
 		text-transform: uppercase;
 	}
 
-	.contact label {
-		padding-left: 5px;
-	}
+	.contact label {padding-left: 5px;}
 
-	input[type="text"],
-	select,
-	textarea {
+	input[type="text"], select, textarea {
 		width: 100%;
 		padding: 12px;
 		border: 1px solid #ccc;
@@ -164,29 +149,17 @@ $gray: rgb(82, 82, 82);
 		grid-column: 2;
 		flex-direction: column;
 	}
-	.e-mail,.phone{
-		@include flex-center;
-		margin: 10px;
-	}
 
-	.e-mail .icon, .phone {
-		margin: 10px;
-	}
+	.e-mail, .e-mail .icon, .phone {margin: 10px;}
 
-	.phone {
-		@include flex-center;
-		margin: 10px;
-	}
+	.e-mail, .phone {@include flex-center;}
 
 	.icon {
 		width: 50px;
-		margin-top: 20px;
-		margin-left: 20px;
+		margin-top: 20px 0 0 20px;
 	}
 
-	.social-media .icon {
-		cursor: pointer;
-	}
+	.social-media .icon {cursor: pointer;}
 
 	/* Misc-Contact End */
 
@@ -239,15 +212,10 @@ $gray: rgb(82, 82, 82);
 		text-transform: uppercase;
 	}
 
-	.concept-section2 p {
-		width: 500px;
-	}
+	.concept-section2 p {width: 500px;}
 
 	/* Concept-section End */
-
-	.services-section {
-		height: 50vh;
-	}
+	.services-section {height: 50vh;}
 
 	.product-wrapper {
 		@include flex-center;
@@ -267,9 +235,7 @@ $gray: rgb(82, 82, 82);
 		border-radius: 10px;
 	}
 
-	.product:hover {
-		transform: scale(1.05);
-	}
+	.product:hover {transform: scale(1.05);}
 
 	footer {
 		@include flex-center;
@@ -279,9 +245,7 @@ $gray: rgb(82, 82, 82);
 		width: 100%;
 	}
 
-	footer h1 {
-		color: whitesmoke;
-	}
+	footer h1 {color: whitesmoke;}
 
 	/* Mobile view */
 
@@ -313,13 +277,9 @@ $gray: rgb(82, 82, 82);
 			height: 100vh;
 		}
 
-		.menu {
-			padding: 10px;
-		}
+		.menu {padding: 10px;}
 
-		.menu li {
-			padding: 2%;
-		}
+		.menu li {padding: 2%;}
 
 		.top-section h1,
 		.top-section p {
@@ -333,7 +293,5 @@ $gray: rgb(82, 82, 82);
 			top: 10px;
 		}
 
-		footer {
-			width: 100%;
-		}
+		footer {width: 100%;}
 	}

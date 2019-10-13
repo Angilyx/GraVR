@@ -19,7 +19,7 @@ header {
 li {
   list-style-type: none; }
 
-header a {
+header nav a {
   color: black;
   text-decoration: none;
   margin: 10px;
@@ -27,8 +27,11 @@ header a {
   text-transform: uppercase;
   font-weight: bold; }
 
-header a:hover {
+header nav a:hover {
   color: main; }
+
+header img a {
+  margin: 0; }
 
 nav {
   display: flex;
@@ -111,9 +114,7 @@ nav {
 .contact label {
   padding-left: 5px; }
 
-input[type="text"],
-select,
-textarea {
+input[type="text"], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -140,25 +141,17 @@ input[type="submit"] {
   grid-column: 2;
   flex-direction: column; }
 
+.e-mail, .e-mail .icon, .phone {
+  margin: 10px; }
+
 .e-mail, .phone {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 10px; }
-
-.e-mail .icon, .phone {
-  margin: 10px; }
-
-.phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px; }
+  align-items: center; }
 
 .icon {
   width: 50px;
-  margin-top: 20px;
-  margin-left: 20px; }
+  margin-top: 20px 0 0 20px; }
 
 .social-media .icon {
   cursor: pointer; }
