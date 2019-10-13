@@ -45,7 +45,7 @@ $gray: rgb(82, 82, 82);
 
 	.menu {@include flex-center;flex-direction: row;}
 
-	.contact-button {
+	.green-button{
 		background-color: $main;
 		color: white;
 		padding: 12px 40px;
@@ -54,7 +54,7 @@ $gray: rgb(82, 82, 82);
 		cursor: pointer;
 	}
 
-	.contact-button:hover {
+	.green-button:hover {
 		color: whitesmoke;
 		background-color: $main;
 	}
@@ -237,6 +237,51 @@ $gray: rgb(82, 82, 82);
 
 	.product:hover {transform: scale(1.05);}
 
+	#customize-container{
+		@include flex-center;
+		flex-flow: column nowrap;
+		margin: 35px 0;
+	}
+
+		#customize-section{
+			@include flex-center;
+			flex-flow: row nowrap;
+		}
+		
+			#customize-grave{
+				@include flex-center;
+			}
+
+				#circle {
+				  width: 100px;
+				  height: 100px;
+				  background: black;
+				  border-radius: 50%
+				}
+				
+				#rectangle {
+					width: 200px;
+					height: 100px;
+					background: black;
+				}
+				#trapezoid {
+					border-bottom: 100px solid black;
+					border-left: 25px solid transparent;
+					border-right: 25px solid transparent;
+					height: 0;
+					width: 100px;
+				}#trapezoid .custom-text{ margin-top: 12vh;}
+				
+				.customize-item{@include flex-center; text-align:center;}
+					.custom-text{font-size: 2vh; color: white;}
+					
+			form{
+				@include flex-center; 
+				align-items: flex-start;
+				flex-flow: column nowrap;
+				min-width: 320px;
+			}
+
 	footer {
 		@include flex-center;
 		text-align: center;
@@ -255,7 +300,7 @@ $gray: rgb(82, 82, 82);
 			flex-direction: column;
 		}
 
-		.contact-button {
+		.green-button {
 			background-color: rgb(245, 245, 245);
 			color: $gray;
 			padding: 0px;
@@ -264,7 +309,7 @@ $gray: rgb(82, 82, 82);
 			cursor: default;
 		}
 
-		.contact-button:hover {
+		.green-button:hover {
 			color: $main;
 			background-color: inherit;
 		}

@@ -17,7 +17,7 @@
                     <li><a href="index.html">Hem</a></li>
                     <li><a href="concept.html">Vårt Koncept</a></li>
                     <li><a href="services.html">Tjänster</a></li>
-                    <li><a href="contact.html" class="contact-button">Kontakt</a></li>
+                    <li><a href="contact.html" class="green-button">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -51,10 +51,39 @@
                     <div class="product">Produkt6</div>
                 </article>
             </section>
+            <article id="customize-container">
+                <h1>Customize your grave</h1>
+                <section id="customize-section">
+                    <div id="customize-grave">
+                        <div id="circle" class="customize-item"><p class="custom-text">Your Text Here</p></div>
+                        <div id="rectangle" class="customize-item"><p class="custom-text">Your Text Here</p></div>
+                        <div id="trapezoid" class="customize-item"><p class="custom-text">Your Text Here</p></div>
+                    </div>
+                    <form>
+						<div id="customize-item-change">
+							<button type="button" class="green-button" onclick="javascript:array(-1);">Previous</button>
+							<button type="button" class="green-button" onclick="javascript:array(1);">Next</button>
+						</div>
+						<div>
+						<label for="customize-color">Grave color: </label>
+							<input id="customize-color" onchange="javascript:color();" type="color" name="background-color" value="#000000">
+							<label for="customize-color">Text color: </label>
+						</div>
+						<input id="customize-text-color" onchange="javascript:colorText();" type="color" name="textcolor" value="#ffffff">
+						<label for="custom-image">Add your own background-image!</label>
+						<input type="text" id="custom-image" value="Add URL">
+						<button type="button" class="green-button" onclick="javascript:image()">Add Image</button>
+						<label for="custom-text-input">Add your own text!</label>
+						<input type="text" id="custom-text-input" value="Your text">
+						<button type="button" class="green-button" onclick="javascript:text()">Try it</button>
+                    </form>
+                </article>
+            </section>
         </main>
         <!--Footer-->
         <footer>
             <h1>Footer</h1>
         </footer>
+        <script src="js/script.js" charset="UTF-8"></script>
     </body>
 </html>
