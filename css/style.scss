@@ -1,0 +1,339 @@
+/*color*/
+$main: rgb(76, 175, 80);
+$gray: rgb(82, 82, 82);
+
+@mixin flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+	header {
+		background-color: white;
+		@include flex-center;
+		width: 100%;
+	}
+
+	.logo {
+		position: relative;
+		top: 25px;
+		right: 50px;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	header a {
+		color: black;
+		text-decoration: none;
+		margin: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	header a:hover {
+		color: main;
+	}
+
+	nav {
+		@include flex-center;
+	}
+
+	.menu {
+		@include flex-center;
+		flex-direction: row;
+	}
+
+	.contact-button {
+		background-color: $main;
+		color: white;
+		padding: 12px 40px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.contact-button:hover {
+		color: whitesmoke;
+		background-color: $main;
+	}
+
+	.top-section {
+		@include flex-center;
+		flex-direction: column;
+		padding: 0 25%;
+		color: white;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		height: 500px;
+		background: url("../img/banner.jpg") center no-repeat fixed;
+		background-size: cover;
+	}
+
+	.top-section p {
+		padding: 2%;
+		text-align: center;
+	}
+
+	.blur {
+		backdrop-filter: blur(10px);
+		background-color: rgba(255, 255, 255, 0.267);
+		border-radius: 10px;
+		padding: 5% 2%;
+	}
+
+	.top-section h1 {
+		text-transform: uppercase;
+	}
+
+	.main-section {
+		color: $gray;
+		text-align: center;
+		background-color: whitesmoke;
+	}
+
+	.main-section h1 {
+		padding: 4%;
+		background-color: whitesmoke;
+		text-transform: uppercase;
+	}
+
+	.main-section p {
+		padding: 0 25% 10%;
+	}
+
+	/* Contact Form Start */
+
+	.contact-section {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contact {
+		grid-column: 1;
+		width: 80%;
+		padding: 2%;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	.contact label {
+		padding-left: 5px;
+	}
+
+	input[type="text"],
+	select,
+	textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical;
+	}
+
+	input[type="submit"] {
+		background-color: #4caf50;
+		color: white;
+		padding: 12px 40px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	/* Contact Form End */
+
+	/* Misc-Contact Start */
+
+	.misc-contact {
+		@include flex-center;
+		grid-column: 2;
+		flex-direction: column;
+	}
+	.e-mail,.phone{
+		@include flex-center;
+		margin: 10px;
+	}
+
+	.e-mail .icon, .phone {
+		margin: 10px;
+	}
+
+	.phone {
+		@include flex-center;
+		margin: 10px;
+	}
+
+	.icon {
+		width: 50px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.social-media .icon {
+		cursor: pointer;
+	}
+
+	/* Misc-Contact End */
+
+	/* Concept-section1 Start */
+
+	.concept-section1 {
+		@include flex-center;
+		justify-content: space-evenly;
+		text-align: center;
+		height: 50vh;
+		padding: 40px;
+	}
+
+	.concept-section1 h1 {
+		margin-top: 20px;
+		font-size: 1.2em;
+		color: $gray;
+		text-transform: uppercase;
+	}
+
+	.concept-section1 p {
+		width: 300px;
+		padding: 20px;
+	}
+
+	.border {
+		border: solid 1px $gray;
+		border-radius: 2px;
+		margin-bottom: 20px;
+	}
+
+	.concept-image {
+		order: 1;
+		width: 200px;
+	}
+
+	.concept-section2 {
+		@include flex-center;
+		flex-direction: row;
+		background-color: rgb(243, 243, 243);
+		height: 50vh;
+		padding: 100px;
+		text-align: center;
+	}
+
+	.concept-section2 h1 {
+		margin: 20px;
+		font-size: 1.2em;
+		color: $gray;
+		text-transform: uppercase;
+	}
+
+	.concept-section2 p {
+		width: 500px;
+	}
+
+	/* Concept-section End */
+
+	.services-section {
+		height: 50vh;
+	}
+
+	.product-wrapper {
+		@include flex-center;
+		flex-wrap: wrap;
+		padding: 2%;
+		background-color: whitesmoke;
+	}
+
+	.product {
+		@include flex-center;
+		background-color: rgba(0, 0, 0, 0.267);
+		width: 200px;
+		height: 300px;
+		margin: 10px;
+		transition: all 0.5s;
+		color: white;
+		border-radius: 10px;
+	}
+
+	.product:hover {
+		transform: scale(1.05);
+	}
+
+	footer {
+		@include flex-center;
+		text-align: center;
+		background-color: $gray;
+		height: 80px;
+		width: 100%;
+	}
+
+	footer h1 {
+		color: whitesmoke;
+	}
+
+	/* Mobile view */
+
+	@media screen and (max-width: 920px) {
+		.container, header, .menu {
+			@include flex-center;
+			flex-direction: column;
+		}
+
+		.contact-button {
+			background-color: rgb(245, 245, 245);
+			color: $gray;
+			padding: 0px;
+			margin: 0;
+			border: none;
+			cursor: default;
+		}
+
+		.contact-button:hover {
+			color: $main;
+			background-color: inherit;
+		}
+
+		.concept-section1 {
+			@include flex-center;
+			padding: 40px;
+			justify-content: space-around;
+			flex-direction: column;
+			height: 100vh;
+		}
+
+		.menu {
+			padding: 10px;
+		}
+
+		.menu li {
+			padding: 2%;
+		}
+
+		.top-section h1,
+		.top-section p {
+			min-width: 250px;
+			max-height: 180px;
+		}
+
+		.logo {
+			width: 150px;
+			right: 0;
+			top: 10px;
+		}
+
+		footer {
+			width: 100%;
+		}
+	}

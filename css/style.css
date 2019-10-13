@@ -1,57 +1,45 @@
+/*color*/
 * {
   margin: 0;
   padding: 0;
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 header {
-  background-color: rgb(245, 245, 245);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
+  width: 100%; }
 
 .logo {
   position: relative;
-  max-width: 300px;
   top: 25px;
-  right: 50px;
-}
+  right: 50px; }
 
-header li {
-  color: inherit;
-  list-style-type: none;
-}
+li {
+  list-style-type: none; }
 
 header a {
-  color: inherit;
+  color: black;
   text-decoration: none;
   margin: 10px;
   text-align: center;
-  color: rgb(77, 77, 77);
   text-transform: uppercase;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 header a:hover {
-  color: green;
-}
+  color: main; }
 
 nav {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  height: 100%;
-}
+  flex-direction: row; }
 
 .contact-button {
   background-color: #4caf50;
@@ -59,20 +47,16 @@ nav {
   padding: 12px 40px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .contact-button:hover {
   color: whitesmoke;
-  background-color: rgb(61, 138, 63);
-}
-
-main {
-  height: 100%;
-}
+  background-color: #4caf50; }
 
 .top-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 0 25%;
   color: white;
@@ -80,66 +64,52 @@ main {
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-image: url("../img/banner.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  background: url("../img/banner.jpg") center no-repeat fixed;
+  background-size: cover; }
 
 .top-section p {
   padding: 2%;
-  text-align: center;
-}
+  text-align: center; }
 
 .blur {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.267);
   border-radius: 10px;
-  padding: 5% 2%;
-}
+  padding: 5% 2%; }
 
 .top-section h1 {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .main-section {
-  color: rgb(82, 82, 82);
+  color: #525252;
   text-align: center;
-  background-color: whitesmoke;
-}
+  background-color: whitesmoke; }
 
 .main-section h1 {
   padding: 4%;
   background-color: whitesmoke;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .main-section p {
-  padding: 0 25% 10%;
-}
+  padding: 0 25% 10%; }
 
 /* Contact Form Start */
-
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .contact {
   grid-column: 1;
   width: 80%;
   padding: 2%;
   text-align: left;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .contact label {
-  padding-left: 5px;
-}
+  padding-left: 5px; }
 
 input[type="text"],
 select,
@@ -151,8 +121,7 @@ textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
-}
+  resize: vertical; }
 
 input[type="submit"] {
   background-color: #4caf50;
@@ -160,211 +129,174 @@ input[type="submit"] {
   padding: 12px 40px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /* Contact Form End */
-
 /* Misc-Contact Start */
-
 .misc-contact {
-  grid-column: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-.e-mail {
-  display: flex;
-  align-items: center;
-  margin: 10px;
-}
+  grid-column: 2;
+  flex-direction: column; }
 
-.e-mail .icon {
-  margin: 10px;
-}
+.e-mail, .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+
+.e-mail .icon, .phone {
+  margin: 10px; }
 
 .phone {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 10px;
-}
-
-.phone .icon {
-  margin: 10px;
-}
+  margin: 10px; }
 
 .icon {
   width: 50px;
   margin-top: 20px;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 
 .social-media .icon {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /* Misc-Contact End */
-
 /* Concept-section1 Start */
-
 .concept-section1 {
   display: flex;
-  padding: 40px;
+  justify-content: center;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
   height: 50vh;
-}
+  padding: 40px; }
 
 .concept-section1 h1 {
   margin-top: 20px;
   font-size: 1.2em;
-  color: rgb(82, 82, 82);
-  text-transform: uppercase;
-}
+  color: #525252;
+  text-transform: uppercase; }
 
 .concept-section1 p {
   width: 300px;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .border {
-  border: solid 1px rgb(82, 82, 82);
+  border: solid 1px #525252;
   border-radius: 2px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .concept-image {
   order: 1;
-  width: 200px;
-}
+  width: 200px; }
 
 .concept-section2 {
   display: flex;
-  background-color: rgb(243, 243, 243);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f3f3f3;
   height: 50vh;
   padding: 100px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: row;
-}
+  text-align: center; }
 
 .concept-section2 h1 {
   margin: 20px;
   font-size: 1.2em;
-  color: rgb(82, 82, 82);
-  text-transform: uppercase;
-}
+  color: #525252;
+  text-transform: uppercase; }
 
 .concept-section2 p {
-  width: 500px;
-}
+  width: 500px; }
 
 /* Concept-section End */
-
 .services-section {
-  height: 50vh;
-}
+  height: 50vh; }
 
 .product-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
   flex-wrap: wrap;
   padding: 2%;
-}
+  background-color: whitesmoke; }
 
 .product {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.267);
   width: 200px;
   height: 300px;
   margin: 10px;
   transition: all 0.5s;
   color: white;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 .product:hover {
-  transform: scale(1.05);
-}
+  transform: scale(1.05); }
 
 footer {
   display: flex;
-  text-align: center;
-  background-color: rgb(82, 82, 82);
-  height: 80px;
-  align-items: center;
   justify-content: center;
-  width: 100%;
-}
+  align-items: center;
+  text-align: center;
+  background-color: #525252;
+  height: 80px;
+  width: 100%; }
 
 footer h1 {
-  color: whitesmoke;
-}
+  color: whitesmoke; }
 
 /* Mobile view */
-
 @media screen and (max-width: 920px) {
-  .container,
-  header,
-  .menu {
+  .container, header, .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   .contact-button {
-    background-color: rgb(245, 245, 245);
-    color: rgb(82, 82, 82);
+    background-color: whitesmoke;
+    color: #525252;
     padding: 0px;
     margin: 0;
     border: none;
-    cursor: default;
-  }
+    cursor: default; }
 
   .contact-button:hover {
-    color: green;
-    background-color: inherit;
-  }
+    color: #4caf50;
+    background-color: inherit; }
 
   .concept-section1 {
     display: flex;
-    padding: 40px;
+    justify-content: center;
     align-items: center;
+    padding: 40px;
     justify-content: space-around;
-    text-align: center;
     flex-direction: column;
-    height: 100vh;
-  }
+    height: 100vh; }
 
   .menu {
-    padding: 10px;
-  }
+    padding: 10px; }
 
   .menu li {
-    padding: 2%;
-  }
+    padding: 2%; }
 
   .top-section h1,
   .top-section p {
     min-width: 250px;
-    max-height: 180px;
-  }
+    max-height: 180px; }
 
   .logo {
     width: 150px;
     right: 0;
-    top: 10px;
-  }
+    top: 10px; }
 
   footer {
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
