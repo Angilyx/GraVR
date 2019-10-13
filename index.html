@@ -57,7 +57,7 @@
                     <div id="customize-grave">
                         <div id="circle" class="customize-item"><p class="custom-text">Your Text Here</p></div>
                         <div id="rectangle" class="customize-item"><p class="custom-text">Your Text Here</p></div>
-                        <div id="trapezoid" class="customize-item"><p class="custom-text">Your Text Here</p></div>
+                        <div id="rectangle-stand" class="customize-item"><p class="custom-text">Your Text Here</p></div>
                     </div>
                     <form>
 						<div id="customize-item-change">
@@ -65,11 +65,11 @@
 							<button type="button" class="green-button" onclick="javascript:array(1);">Next</button>
 						</div>
 						<div>
-						<label for="customize-color">Grave color: </label>
+							<label for="customize-color">Grave color: </label>
 							<input id="customize-color" onchange="javascript:color();" type="color" name="background-color" value="#000000">
 							<label for="customize-color">Text color: </label>
+							<input id="customize-text-color" onchange="javascript:colorText();" type="color" name="textcolor" value="#ffffff">
 						</div>
-						<input id="customize-text-color" onchange="javascript:colorText();" type="color" name="textcolor" value="#ffffff">
 						<label for="custom-image">Add your own background-image!</label>
 						<input type="text" id="custom-image" value="Add URL">
 						<button type="button" class="green-button" onclick="javascript:image()">Add Image</button>

@@ -261,15 +261,10 @@ input[type="submit"] {
   height: 100px;
   background: black; }
 
-#trapezoid {
-  border-bottom: 100px solid black;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: 100px; }
-
-#trapezoid .custom-text {
-  margin-top: 12vh; }
+#rectangle-stand {
+  width: 100px;
+  height: 200px;
+  background: black; }
 
 .customize-item {
   display: flex;

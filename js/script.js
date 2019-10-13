@@ -28,7 +28,7 @@ function image() {
   var background = document.querySelectorAll(".customize-item");
   for (i = 0; i < items.length; i++) {
 	background[i].style.background = "#ffffff url('"+url+"') no-repeat";
-	background[i].style.backgroundSize = "50%";
+	background[i].style.backgroundSize = "cover";
 	}
 
 }

@@ -264,13 +264,14 @@ $gray: rgb(82, 82, 82);
 					height: 100px;
 					background: black;
 				}
-				#trapezoid {
-					border-bottom: 100px solid black;
-					border-left: 25px solid transparent;
-					border-right: 25px solid transparent;
-					height: 0;
+				
+				#rectangle-stand {
 					width: 100px;
-				}#trapezoid .custom-text{ margin-top: 12vh;}
+					height: 200px;
+					background: black;
+				}
+			
+
 				
 				.customize-item{@include flex-center; text-align:center;}
 					.custom-text{font-size: 2vh; color: white;}
