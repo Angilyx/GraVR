@@ -24,7 +24,7 @@ li {
 
 header {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -103,7 +103,12 @@ header nav a:hover {
 @media only screen and (max-width: 832px) {
   header {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+
 
   .blur {
     min-width: 320px;
@@ -221,4 +226,20 @@ footer {
 
 footer h1 {
   color: whitesmoke;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+  header img {
+    height: 100px;
+    width: 50%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
