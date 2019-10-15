@@ -2,6 +2,12 @@
 	body{}
 		.container{}
 			main{}
+			
+			.top-section {
+				background: url("../img/banner2.jpg") center no-repeat fixed;
+				color:black;
+			}
+			
 				.kontakt-section {
 					display: grid;
 					grid-template-columns: 1fr 1fr;
