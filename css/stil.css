@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -23,8 +23,11 @@ nav, header, .menu {
   align-items: center; }
 
 header {
-  background-color: white;
-  width: 100%; }
+	position: fixed;
+	background-color: white;
+	width: 100%; 
+	z-index: 2;
+}
 
 header img {
   position: relative;
@@ -58,6 +61,23 @@ header nav a:hover {
 .green-button:hover {
   color: whitesmoke;
   background-color: #4caf50; }
+
+#välj-css{
+	position: fixed;
+	z-index:3;
+	right:10px;
+	top:5px;
+}
+
+#välj-css a{
+	padding:15px;
+	text-decoration: none;
+}
+
+#välj-css img{
+	position:absolute;
+	margin-left: -25px;
+}
 
 .top-section {
   display: flex;
