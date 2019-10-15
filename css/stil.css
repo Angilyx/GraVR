@@ -36,15 +36,15 @@ header {
 header img {
   position: relative;
   top: 30px;
+  margin-right: 20px;
 }
 
 header img a {
   margin: 0;
 }
 
-
 nav {
-  display: inline-block
+  display: inline-block;
 }
 
 .menu {
@@ -109,7 +109,6 @@ header nav a:hover {
     text-align: center;
   }
 
-
   .blur {
     min-width: 320px;
   }
@@ -137,7 +136,6 @@ header nav a:hover {
   background-size: cover;
   height: 450px;
 }
-
 
 .blur {
   backdrop-filter: blur(10px);
@@ -228,9 +226,9 @@ footer h1 {
   color: whitesmoke;
 }
 
-
-
 @media only screen and (max-width: 400px) {
+  * {
+  }
 
   header img {
     height: 100px;
@@ -241,5 +239,4 @@ footer h1 {
     display: flex;
     flex-direction: column;
   }
-
 }
