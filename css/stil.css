@@ -100,7 +100,7 @@ header nav a:hover {
   margin-left: -25px;
 }
 
-@media only screen and (max-width: 832px) {
+@media only screen and (max-width: 870px) {
   header {
     position: relative;
     display: flex;
@@ -110,7 +110,7 @@ header nav a:hover {
   }
 
   .blur {
-    min-width: 320px;
+    min-width: 240px;
   }
 
   #välj-css {
@@ -127,21 +127,19 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 202px 25% 100px 25%;
   color: white;
   text-align: center;
   justify-content: center;
-  align-items: center;
   background: url("../img/banner.jpg") center no-repeat fixed;
-  background-size: cover;
-  height: 450px;
+  height: 100vh;
 }
 
 .blur {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.267);
   border-radius: 10px;
-  padding: 5% 2%;
+  padding: 20px;
+  margin: 100px 25%;
 }
 
 .main-section {
@@ -226,8 +224,11 @@ footer h1 {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 400px) {
-  * {
+@media only screen and (max-width: 460px) {
+  * {}
+
+  .header {
+    position: relative;
   }
 
   header img {
