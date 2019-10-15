@@ -1,58 +1,73 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 h1 {
   text-transform: uppercase;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 h2 {
   text-transform: capitalize;
   font-weight: 300;
   font-size: 1.2em;
-  margin: 10px 0; }
+  margin: 10px 0;
+}
 
 li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
-header{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center; 
-	position: fixed;
-	background-color: white;
-	width: 100%; 
-	z-index: 2;
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 2;
 }
 
 header img {
   position: relative;
-  top: 30px; }
+  top: 30px;
+}
 
 header img a {
-  margin: 0; }
-  
-  
-nav{display: inline-block}
+  margin: 0;
+}
 
-.menu	{margin-top:28px;}
-.menu li{display:inline-block;}
+
+nav {
+  display: inline-block
+}
+
+.menu {
+  margin-top: 28px;
+}
+
+.menu li {
+  display: inline-block;
+}
 
 nav a {
-	display: inline-block;
+  display: inline-block;
   color: black;
   text-decoration: none;
   margin: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold; 
-  }
+  font-weight: bold;
+}
 
 header nav a:hover {
-  color: main; }
+  color: main;
+}
 
 .green-button {
   background-color: #4caf50;
@@ -60,33 +75,47 @@ header nav a:hover {
   padding: 12px 40px;
   border: none;
   border-radius: 4px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .green-button:hover {
   color: whitesmoke;
-  background-color: #4caf50; }
-
-#välj-css{
-	position: fixed;
-	z-index:3;
-	right:10px;
-	top:5px;
+  background-color: #4caf50;
 }
 
-#välj-css a{
-	padding:15px;
-	text-decoration: none;
+#välj-css {
+  position: fixed;
+  z-index: 3;
+  right: 10px;
+  top: 5px;
 }
 
-#välj-css img{
-	position:absolute;
-	margin-left: -25px;
+#välj-css a {
+  padding: 15px;
+  text-decoration: none;
+}
+
+#välj-css img {
+  position: absolute;
+  margin-left: -25px;
 }
 
 @media only screen and (max-width: 832px) {
-  header{position: relative;}
-  .blur{min-width: 320px;}
-  #välj-css{background-color:white; padding: 5px 5px 5px 20px; top:0; right:0; border-bottom-left-radius: 15px;}
+  header {
+    position: relative;
+  }
+
+  .blur {
+    min-width: 320px;
+  }
+
+  #välj-css {
+    background-color: white;
+    padding: 5px 5px 5px 20px;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 15px;
+  }
 }
 
 .top-section {
@@ -100,31 +129,38 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   background: url("../img/banner.jpg") center no-repeat fixed;
-  background-size: cover; }
+  background-size: cover;
+  height: 450px;
+}
+
 
 .blur {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.267);
   border-radius: 10px;
-  padding: 5% 2%; }
+  padding: 5% 2%;
+}
 
 .main-section {
   padding: 50px 0;
   color: #525252;
   text-align: center;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+}
 
 .main-section h1 {
-padding: 4%;
+  padding: 4%;
   background-color: whitesmoke;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .produkt-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+}
 
 .produkt-wrapper h2 {
   order: 1;
@@ -142,8 +178,8 @@ padding: 4%;
   margin: 10px;
   transition: all 0.5s;
   color: white;
-  border-radius: 10px; 
-  }
+  border-radius: 10px;
+}
 
 .produkt:hover {
   transform: scale(1.05);
@@ -180,7 +216,9 @@ footer {
   text-align: center;
   background-color: #525252;
   height: 80px;
-  width: 100%; }
+  width: 100%;
+}
 
 footer h1 {
-  color: whitesmoke; }
+  color: whitesmoke;
+}
