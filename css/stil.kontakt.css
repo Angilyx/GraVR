@@ -1,0 +1,64 @@
+@charset "UTF-8";
+	body{}
+		.container{}
+			main{}
+				.kontakt-section {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					padding: 10px;
+					align-items: center;
+					justify-content: center;
+				}
+					.kontakt {
+						grid-column: 1;
+						width: 80%;
+						padding: 2%;
+						text-align: left;
+						text-transform: uppercase;
+					}
+							.kontakt label {padding-left: 5px;}
+
+						input[type="text"], select, textarea {
+							width: 100%;
+							padding: 12px;
+							border: 1px solid #ccc;
+							border-radius: 4px;
+							box-sizing: border-box;
+							margin-top: 6px;
+							margin-bottom: 16px;
+							resize: vertical;
+						}
+
+						input[type="submit"] {
+							background-color: #4caf50;
+							color: white;
+							padding: 12px 40px;
+							border: none;
+							border-radius: 4px;
+							cursor: pointer;
+						}
+
+				/* kontakt Form End */
+
+				/* Misc-kontakt Start */
+
+					.misc-kontakt {
+						display: flex; 
+						align-items: center;
+						justify-content: center;
+						grid-column: 2;
+						flex-direction: column;
+					}
+						.e-mail, .e-mail .ikon, .telefon {margin: 10px;}
+
+						.e-mail, .telefon {
+							display: flex; 
+							align-items: center;
+							justify-content: center;
+						}
+							.ikon {
+								width: 50px;
+								margin-top: 20px 0 0 20px;
+							}
+
+							.social-media .ikon {cursor: pointer;}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+#customize-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 35px 0; }
+
+#customize-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap; }
+
+#customize-grave {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%; }
+
+#rectangle {
+  width: 200px;
+  height: 100px;
+  background: black; }
+
+#rectangle-stand {
+  width: 100px;
+  height: 200px;
+  background: black; }
+
+.customize-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.custom-text {
+  font-size: 2vh;
+  color: white; }
