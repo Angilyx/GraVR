@@ -17,12 +17,11 @@ h2 {
 li {
   list-style-type: none; }
 
-nav, header, .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-header {
+header{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center; 
 	position: fixed;
 	background-color: white;
 	width: 100%; 
@@ -35,17 +34,22 @@ header img {
 
 header img a {
   margin: 0; }
+  
+  
+nav{display: inline-block}
 
-.menu {
-  flex-direction: row; }
+.menu	{margin-top:28px;}
+.menu li{display:inline-block;}
 
-header nav a {
+nav a {
+	display: inline-block;
   color: black;
   text-decoration: none;
   margin: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold; 
+  }
 
 header nav a:hover {
   color: main; }
@@ -79,17 +83,22 @@ header nav a:hover {
 	margin-left: -25px;
 }
 
+@media only screen and (max-width: 832px) {
+  header{position: relative;}
+  .blur{min-width: 320px;}
+  #välj-css{background-color:white; padding: 5px 5px 5px 20px; top:0; right:0; border-bottom-left-radius: 15px;}
+}
+
 .top-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 25%;
+  padding: 202px 25% 100px 25%;
   color: white;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 500px;
   background: url("../img/banner.jpg") center no-repeat fixed;
   background-size: cover; }
 
