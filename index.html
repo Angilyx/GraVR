@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>GraVR</title>
-        <link href="css/stil.css" rel="stylesheet" type="text/css">
-        <link href="css/stil.skraddarsy.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <!--HEADER-->
-        <header>
-            <a href="index.html"><img src="img/logo.svg" width="300px" height="99px" alt="logo" class="logo"></a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="koncept.html">Vårt Koncept</a></li>
-                    <li><a href="tjanster.html">Tjänster</a></li>
-                    <li><a href="kontakt.html" class="kontakt-button">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--MAIN CONTENT-->
-        <main>
-            <!--Top-Section-->
-            <section class="top-section">
-                <h1>Titel</h1>
-                <div class="blur">
-                    <h1>Digitala Gravstenar</h1>
-                    <article>
-                        <h2>Vad är GraVR</h2>
-                        <p>Kort introduktion till vår produkt här<br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Maxime, nihil iusto a iste, amet, at dolorum natus
-                            eos molestias ex ipsam ipsum quibusdam! Magnam
-                            totam corrupti itaque laudantium eos. Inventore.</p>
-                    </article>
-                </div>
-            </section>
-            <!--Main-Section-->
-            <section class="main-section">
-                <h1>Gravstenar</h1>
-                <article class="produkt-wrapper">
-                    <h2>Exempel på design</h2>
-                    <div class="produkt produkt1">Produkt1</div>
-                    <div class="produkt produkt2">Produkt2</div>
-                    <div class="produkt">Produkt3</div>
-                    <div class="produkt produkt1">Produkt4</div>
-                    <div class="produkt produkt2">Produkt5</div>
-                    <div class="produkt">Produkt6</div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GraVR</title>
+    <link href="css/stil.css" rel="stylesheet" type="text/css">
+    <link href="css/stil.skraddarsy.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="index.html"><img src="img/logo.svg" width="300px" height="99px" alt="logo" class="logo"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="koncept.html">Vårt Koncept</a></li>
+                <li><a href="tjanster.html">Tjänster</a></li>
+                <li><a href="kontakt.html" class="kontakt-button">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN CONTENT-->
+    <main>
+        <!--Top-Section-->
+        <section class="top-section">
+            <h1>Titel</h1>
+            <div class="blur">
+                <article>
+                    <h2>Vad är GraVR</h2>
+                    <p>Kort introduktion till vår produkt här<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime, nihil iusto a iste, amet, at dolorum natus
+                        eos molestias ex ipsam ipsum quibusdam! Magnam
+                        totam corrupti itaque laudantium eos. Inventore.</p>
                 </article>
-            </section>
-			<article id="customize-container">
-                <h1>Customize your grave</h1>
-                <section id="customize-section">
-                    <div id="customize-grave">
-                        <div id="circle" class="customize-item"><p class="custom-text">Your Text Here</p></div>
-                        <div id="rectangle" class="customize-item"><p class="custom-text">Your Text Here</p></div>
-                        <div id="rectangle-stand" class="customize-item"><p class="custom-text">Your Text Here</p></div>
+            </div>
+        </section>
+        <!--Main-Section-->
+        <section class="main-section">
+            <h1>Gravstenar</h1>
+            <article class="produkt-wrapper">
+                <h2>Exempel på design</h2>
+                <div class="produkt produkt1"></div>
+                <div class="produkt produkt2"></div>
+                <div class="produkt produkt3"></div>
+                <div class="produkt produkt4"></div>
+                <div class="produkt produkt5"></div>
+                <div class="produkt produkt6"></div>
+            </article>
+        </section>
+        <article id="customize-container">
+            <h1>Customize your grave</h1>
+            <section id="customize-section">
+                <div id="customize-grave">
+                    <div id="circle" class="customize-item">
+                        <p class="custom-text">Your Text Here</p>
                     </div>
-                    <form>
-						<div id="customize-item-change">
-							<button type="button" class="green-button" onclick="javascript:array(-1);">Previous</button>
-							<button type="button" class="green-button" onclick="javascript:array(1);">Next</button>
-						</div>
-						<div>
-							<label for="customize-color">Grave color: </label>
-							<input id="customize-color" onchange="javascript:color();" type="color" name="bakgrund-color" value="#000000">
-							<label for="customize-color">Text color: </label>
-							<input id="customize-text-color" onchange="javascript:colorText();" type="color" name="textcolor" value="#ffffff">
-						</div>
-						<label for="custom-image">Lägg till en bakgrund!</label>
-						<input type="text" id="custom-image" value="Add URL">
-						<button type="button" class="green-button" onclick="javascript:image()">Add Image</button>
-						<label for="custom-text-input">Add your own text!</label>
-						<input type="text" id="custom-text-input" value="Your text">
-						<button type="button" class="green-button" onclick="javascript:text()">Try it</button>
-                    </form>
-				</section>
-			</article>
-        </main>
-        <!--Footer-->
-        <footer>
-            <h1>Footer</h1>
-        </footer>
-		<script src="js/script.js" charset="UTF-8"></script>
-    </body>
+                    <div id="rectangle" class="customize-item">
+                        <p class="custom-text">Your Text Here</p>
+                    </div>
+                    <div id="rectangle-stand" class="customize-item">
+                        <p class="custom-text">Your Text Here</p>
+                    </div>
+                </div>
+                <form>
+                    <div id="customize-item-change">
+                        <button type="button" class="green-button" onclick="javascript:array(-1);">Previous</button>
+                        <button type="button" class="green-button" onclick="javascript:array(1);">Next</button>
+                    </div>
+                    <div>
+                        <label for="customize-color">Grave color: </label>
+                        <input id="customize-color" onchange="javascript:color();" type="color" name="bakgrund-color"
+                            value="#000000">
+                        <label for="customize-color">Text color: </label>
+                        <input id="customize-text-color" onchange="javascript:colorText();" type="color"
+                            name="textcolor" value="#ffffff">
+                    </div>
+                    <label for="custom-image">Lägg till en bakgrund!</label>
+                    <input type="text" id="custom-image" value="Add URL">
+                    <button type="button" class="green-button" onclick="javascript:image()">Add Image</button>
+                    <label for="custom-text-input">Add your own text!</label>
+                    <input type="text" id="custom-text-input" value="Your text">
+                    <button type="button" class="green-button" onclick="javascript:text()">Try it</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <!--Footer-->
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+    <script src="js/script.js" charset="UTF-8"></script>
+</body>
+
 </html>

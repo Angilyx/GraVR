@@ -1,0 +1,170 @@
+/*color*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav,
+header,
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+}
+
+header img a {
+  margin: 0;
+}
+
+.menu {
+  flex-direction: row;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: main;
+}
+
+.kontakt-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.kontakt-button:hover {
+  color: whitesmoke;
+  background-color: #4caf50;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 25%;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: url("../img/banner.jpg") center no-repeat fixed;
+  background-size: cover;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.267);
+  border-radius: 10px;
+  padding: 5% 2%;
+}
+
+.main-section {
+  color: #525252;
+  text-align: center;
+  background-color: whitesmoke;
+
+}
+
+.main-section h1 {
+  padding: 4%;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.produkt-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2%;
+  background-color: whitesmoke;
+}
+
+.produkt-wrapper h2 {
+  order: 1;
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+.produkt {
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.267);
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  transition: all 0.5s;
+  color: white;
+  border-radius: 10px;
+}
+
+.produkt:hover {
+  transform: scale(1.05);
+}
+
+.produkt1 {
+  background-image: url(../img/Produkt1.png);
+}
+
+.produkt2 {
+  background-image: url(../img/Produkt2.png);
+}
+
+.produkt3 {
+  background-image: url(../img/Produkt3.png);
+}
+
+.produkt4 {
+  background-image: url(../img/Produkt4.png);
+}
+
+.produkt5 {
+  background-image: url(../img/Produkt5.png);
+}
+
+.produkt6 {
+  background-image: url(../img/Produkt6.png);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #525252;
+  height: 80px;
+  width: 100%;
+}
+
+footer h1 {
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=stil.css.map */
