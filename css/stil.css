@@ -180,6 +180,7 @@ header nav a:hover {
   transition: all 0.5s;
   color: white;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .produkt:hover {
