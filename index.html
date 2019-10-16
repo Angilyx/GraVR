@@ -1,111 +1,170 @@
 <!DOCTYPE html>
 <html lang="sv">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GraVR</title>
-    <link href="css/stil.css" rel="stylesheet" type="text/css">
-    <link href="css/stil.skraddarsy.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="css/stil.css" rel="stylesheet" type="text/css" />
+    <link href="css/stil.skraddarsy.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <!--HEADER-->
+    <a name="top"></a>
     <header>
-        <a href="index.html"><img src="img/logo.svg" width="300px" height="99px" alt="logo" class="logo"></a>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="koncept.html">Vårt Koncept</a></li>
-                <li><a href="tjanster.html">Tjänster</a></li>
-                <li><a href="kontakt.html" class="green-button">Kontakt</a></li>
-            </ul>
-        </nav>
+      <a href="index.html"
+        ><img
+          src="img/logo.svg"
+          width="300px"
+          height="99px"
+          alt="logo"
+          class="logo"
+      /></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="koncept.html">Vårt Koncept</a></li>
+          <li><a href="tjanster.html">Tjänster</a></li>
+          <li><a href="kontakt.html" class="green-button">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
     <!--MAIN CONTENT-->
     <main>
-        <!--Top-Section-->
-		<div id="välj-css">
-			<a href="#"  onclick="javascript:changeTextSize()"><img src="img/forstoringsglas.png" alt="förstoringsglas ikon">STÖRRE TEXT</a>
-			<a href="#"  onclick="javascript:changeBackground()"><img src="img/gul.png" alt="gul bakgrundsfärg ikon">GUL BAKGRUND</a>
-		</div>
-        <div class="top-section">
-            <div class="blur">
-                <h1>Titel Här</h1>
-                <article>
-                    <h2>Vad är GraVR</h2>
-                    <p>Kort introduktion till vår produkt här<br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Maxime, nihil iusto a iste, amet, at dolorum natus
-                        eos molestias ex ipsam ipsum quibusdam! Magnam
-                        totam corrupti itaque laudantium eos. Inventore.</p>
-                </article>
-            </div>
+      <!--Top-Section-->
+      <div id="välj-css">
+        <a href="#" onclick="javascript:changeTextSize()"
+          ><img
+            src="img/forstoringsglas.png"
+            alt="förstoringsglas ikon"
+          />STÖRRE TEXT</a
+        >
+        <a href="#" onclick="javascript:changeBackground()"
+          ><img src="img/gul.png" alt="gul bakgrundsfärg ikon" />GUL BAKGRUND</a
+        >
+      </div>
+      <div class="top-section">
+        <div class="blur">
+          <h1>Titel Här</h1>
+          <article>
+            <h2>Vad är GraVR</h2>
+            <p>
+              Kort introduktion till vår produkt här<br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              nihil iusto a iste, amet, at dolorum natus eos molestias ex ipsam
+              ipsum quibusdam! Magnam totam corrupti itaque laudantium eos.
+              Inventore.
+            </p>
+          </article>
         </div>
-        <!--Main-Section-->
-        <section class="main-section">
-            <h1>Gravstenar</h1>
-            <article class="produkt-wrapper">
-                <h2>Exempel på design</h2>
-                <div class="produkt produkt1"></div>
-                <div class="produkt produkt2"></div>
-                <div class="produkt produkt3"></div>
-                <div class="produkt produkt4"></div>
-                <div class="produkt produkt5"></div>
-                <div class="produkt produkt6"></div>
-            </article>
-        </section>
-        <article id="customize-container">
-            <h1>Din gravsten</h1>
-			<h2>Skräddarsy din virtuella gravsten!</h2>
-            <div id="customize-section">
-                <div id="customize-grave">
-                    <div id="circle" class="customize-item">
-                        <p class="custom-text">Din text här!</p>
-                    </div>
-                    <div id="rectangle" class="customize-item">
-                        <p class="custom-text">Din text här!</p>
-                    </div>
-                    <div id="rectangle-stand" class="customize-item">
-                        <p class="custom-text">Din text här!</p>
-                    </div>
-                </div>
-                <form>
-                    <div id="customize-item-change">
-                        <button type="button" class="green-button" onclick="javascript:array(-1);">Förra</button>
-                        <button type="button" class="green-button" onclick="javascript:array(1);">Nästa</button>
-                    </div>
-                    <div>
-                        <label for="customize-color">Färg på Grav: </label>
-                        <input id="customize-color" onchange="javascript:color();" type="color" name="bakgrund-color"
-                            value="#000000">
-					</div>
-					<div>
-                        <label for="customize-color">Färg på text: </label>
-                        <input id="customize-text-color" onchange="javascript:colorText();" type="color"
-                            name="textcolor" value="#ffffff">
-                    </div>
-					<div>
-						<label for="custom-image">Lägg till en bakgrund!</label>
-						<input type="text" id="custom-image" value="Din bild-URL här">
-						<button type="button" class="greener-button" onclick="javascript:image()">Testa</button>
-					</div>
-					<div>
-						<label for="custom-text-input">Lägg till din text!</label>
-						<input type="text" id="custom-text-input" value="Skriv din text här!">
-						<button type="button" class="greener-button" onclick="javascript:text()">Testa</button>
-					</div>
-                </form>
-            </div>
+      </div>
+      <!--Main-Section-->
+      <section class="main-section">
+        <h1>Gravstenar</h1>
+        <article class="produkt-wrapper">
+          <h2>Exempel på design</h2>
+          <div class="produkt produkt1"></div>
+          <div class="produkt produkt2"></div>
+          <div class="produkt produkt3"></div>
+          <div class="produkt produkt4"></div>
+          <div class="produkt produkt5"></div>
+          <div class="produkt produkt6"></div>
         </article>
+      </section>
+      <article id="customize-container">
+        <h1>Din gravsten</h1>
+        <h2>Skräddarsy din virtuella gravsten!</h2>
+        <div id="customize-section">
+          <div id="customize-grave">
+            <div id="circle" class="customize-item">
+              <p class="custom-text">Din text här!</p>
+            </div>
+            <div id="rectangle" class="customize-item">
+              <p class="custom-text">Din text här!</p>
+            </div>
+            <div id="rectangle-stand" class="customize-item">
+              <p class="custom-text">Din text här!</p>
+            </div>
+          </div>
+          <form>
+            <div id="customize-item-change">
+              <button
+                type="button"
+                class="green-button"
+                onclick="javascript:array(-1);"
+              >
+                Förra
+              </button>
+              <button
+                type="button"
+                class="green-button"
+                onclick="javascript:array(1);"
+              >
+                Nästa
+              </button>
+            </div>
+            <div>
+              <label for="customize-color">Färg på Grav: </label>
+              <input
+                id="customize-color"
+                onchange="javascript:color();"
+                type="color"
+                name="bakgrund-color"
+                value="#000000"
+              />
+            </div>
+            <div>
+              <label for="customize-color">Färg på text: </label>
+              <input
+                id="customize-text-color"
+                onchange="javascript:colorText();"
+                type="color"
+                name="textcolor"
+                value="#ffffff"
+              />
+            </div>
+            <div>
+              <label for="custom-image">Lägg till en bakgrund!</label>
+              <input type="text" id="custom-image" value="Din bild-URL här" />
+              <button
+                type="button"
+                class="greener-button"
+                onclick="javascript:image()"
+              >
+                Testa
+              </button>
+            </div>
+            <div>
+              <label for="custom-text-input">Lägg till din text!</label>
+              <input
+                type="text"
+                id="custom-text-input"
+                value="Skriv din text här!"
+              />
+              <button
+                type="button"
+                class="greener-button"
+                onclick="javascript:text()"
+              >
+                Testa
+              </button>
+            </div>
+          </form>
+        </div>
+      </article>
     </main>
     <!--Footer-->
     <footer>
-        <h1>Footer</h1>
+      <a href="#top"> Tillbaka till toppen</a>
+      <h2>Copyright © 2019 Team Kappa</h2>
+      <div class="social-media">
+        <img src="img/twitter.png" alt="twitter ikon." class="ikon" />
+        <img src="img/facebook.png" alt="facebook ikon." class="ikon" />
+        <img src="img/instagram.png" alt="instagram ikon." class="ikon" />
+      </div>
     </footer>
     <script src="js/script.js" charset="UTF-8"></script>
     <script src="js/css.script.js" charset="UTF-8"></script>
-</body>
-
+  </body>
 </html>
