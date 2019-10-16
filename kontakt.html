@@ -1,91 +1,102 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>GraVR</title>
-        <link href="css/stil.css" rel="stylesheet" type="text/css">
-        <link href="css/stil.kontakt.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <article class="container">
-            <!--HEADER-->
-            <header>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GraVR</title>
+    <link href="css/stil.css" rel="stylesheet" type="text/css">
+    <link href="css/stil.kontakt.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <article class="container">
+        <!--HEADER-->
+        <header>
             <a href="index.html"><img src="img/logo.svg" width="300px" height="99px" alt="logo" class="logo"></a>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="index.html">Hem</a></li>
-                        <li><a href="koncept.html">Vårt Koncept</a></li>
-                        <li><a href="tjanster.html">Tjänster</a></li>
-                        <li><a href="kontakt.html" class="green-button">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <!--MAIN CONTENT-->
-            <main>
-                <!--Main-content-->
-				<div id="välj-css">
-					<a href="#"  onclick="javascript:changeTextSize()"><img src="img/forstoringsglas.png" alt="förstoringsglas ikon">STÖRRE TEXT</a>
-					<a href="#"  onclick="javascript:changeBackground()"><img src="img/gul.png" alt="gul bakgrundsfärg ikon">GUL BAKGRUND</a>
-				</div>
-                <div class="top-section">
-                    <div class="blur">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="koncept.html">Vårt Koncept</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="kontakt.html" class="green-button">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--MAIN CONTENT-->
+        <main>
+            <!--Main-content-->
+            <div id="välj-css">
+                <a href="#" onclick="javascript:changeTextSize()"><img src="img/forstoringsglas.png"
+                        alt="förstoringsglas ikon">STÖRRE TEXT</a>
+                <a href="#" onclick="javascript:changeBackground()"><img src="img/gul.png"
+                        alt="gul bakgrundsfärg ikon">GUL BAKGRUND</a>
+            </div>
+            <div class="top-section">
+                <div class="blur">
                     <h1>Kontakta Oss</h1>
                     <article>
                         <h2>Titel</h2>
                         <p>Vi på GraVR finns alltid tillg... <br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Maxime, nihil iusto a iste, amet, at dolorum natus
-                        eos molestias ex ipsam ipsum quibusdam! Magnam
-                        totam corrupti itaque laudantium eos. Inventore.</p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Maxime, nihil iusto a iste, amet, at dolorum natus
+                            eos molestias ex ipsam ipsum quibusdam! Magnam
+                            totam corrupti itaque laudantium eos. Inventore.</p>
                     </article>
-                    </div>
                 </div>
-                <section class="kontakt-section">
-                    <h1>Titel</h1>
-                    <article class="kontakt">
-                        <h2>Titel</h2>
-                        <form action="action_page.php">
-                            <label for="namn">Ditt Namn</label>
-                            <input type="text" id="namn" name="namn" placeholder="Ditt namn.."> <br>
+            </div>
+            <section class="kontakt-section">
+                <h1>Titel</h1>
+                <article class="kontakt">
+                    <h2>Titel</h2>
+                    <form action="action_page.php">
+                        <label for="namn">Ditt Namn</label>
+                        <input type="text" id="namn" name="namn" placeholder="Ditt namn.."> <br>
 
-                            <label for="mail">e-post</label>
-                            <input type="text" id="mail" name="mail" placeholder="Din e-post.."><br>
+                        <label for="mail">e-post</label>
+                        <input type="text" id="mail" name="mail" placeholder="Din e-post.."><br>
 
-                            <label for="tele">Telefon</label>
-                            <input type="text" id="tele" name="tele" placeholder="Ditt telefonnummer.."><br>
+                        <label for="tele">Telefon</label>
+                        <input type="text" id="tele" name="tele" placeholder="Ditt telefonnummer.."><br>
 
-                            <label for="subject">Ditt meddelande</label>
-                            <textarea id="subject" name="subject" placeholder="Skriv här.." style="height:200px"></textarea>
-                            <br>
+                        <label for="subject">Ditt meddelande</label>
+                        <textarea id="subject" name="subject" placeholder="Skriv här.." style="height:200px"></textarea>
+                        <br>
 
-                            <input type="submit" value="Skicka">
-                        </form>
-                    </article>
-                    <article class="misc-kontakt">
-                        <h2>Titel</h2>
-                        <div class="e-mail">
-                            <img src="img/email-ikon.png" alt="Email ikon." class="ikon">
-                            <a href="mailto:kontakt@gravr.com"> kontakt@gravr.com</a>
-                        </div>
-                        <div class="telefon">
-                            <img src="img/telefon-ikon.png" alt="telefon ikon." class="ikon">
-                            <h1>+46 123456789</h1>
-                        </div>
-                        <div class="social-media">
-                            <img src="img/twitter.png" alt="twitter ikon." class="ikon">
-                            <img src="img/facebook.png" alt="facebook ikon." class="ikon">
-                            <img src="img/instagram.png" alt="instagram ikon." class="ikon">
-                        </div>
-                    </article>
-                </section>
-            </main>
-            <!--Footer-->
-            <footer>
-            <h1>Footer</h1>
-            </footer>
-			<script src="js/css.script.js" charset="UTF-8"></script>
-        </article>
-    </body>
+                        <input type="submit" value="Skicka">
+                    </form>
+                </article>
+                <article class="misc-kontakt">
+                    <h2>Kontakt</h2>
+                    <div class="e-mail">
+                        <img src="img/email-ikon.png" alt="Email ikon." class="ikon">
+                        <a href="mailto:kontakt@gravr.com"> kontakt@gravr.com</a>
+                    </div>
+                    <div class="telefon">
+                        <img src="img/telefon-ikon.png" alt="telefon ikon." class="ikon">
+                        <h4>+46 123456789</h4>
+                    </div>
+                    <div class="social-media">
+                        <img src="img/twitter.png" alt="twitter ikon." class="ikon">
+                        <img src="img/facebook.png" alt="facebook ikon." class="ikon">
+                        <img src="img/instagram.png" alt="instagram ikon." class="ikon">
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <a href="#top"> Tillbaka till toppen</a>
+            <h2>Copyright © 2019 Team Kappa</h2>
+            <div class="social-media">
+                <img src="img/twitter.png" alt="twitter ikon." class="ikon" />
+                <img src="img/facebook.png" alt="facebook ikon." class="ikon" />
+                <img src="img/instagram.png" alt="instagram ikon." class="ikon" />
+            </div>
+        </footer>
+        <script src="js/css.script.js" charset="UTF-8"></script>
+    </article>
+</body>
+
 </html>
