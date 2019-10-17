@@ -12,20 +12,28 @@ main {}
 }
 
 .kontakt-section {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-flow: row wrap;
 	padding: 10px;
 	align-items: center;
 	justify-content: center;
 }
 
+.kontakt-section h1{
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+
 .kontakt {
 	grid-column: 1;
-	width: 80%;
+	width: 50%;
 	padding: 2%;
 	text-align: left;
 	text-transform: uppercase;
 }
+
+
 
 .kontakt label {
 	padding-left: 5px;
