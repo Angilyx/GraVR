@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1 {
@@ -57,7 +57,7 @@ nav {
 
 nav a {
   display: inline-block;
-  color: black;
+  color: rgb(19, 19, 19);
   text-decoration: none;
   margin: 10px;
   text-align: center;
@@ -66,7 +66,7 @@ nav a {
 }
 
 header nav a:hover {
-  color: main;
+  color: #4caf50;
 }
 
 .green-button {
@@ -102,7 +102,6 @@ header nav a:hover {
 
 /* footer */
 
-
 @media only screen and (max-width: 870px) {
   header {
     position: relative;
@@ -114,6 +113,7 @@ header nav a:hover {
 
   .blur {
     min-width: 240px;
+    padding: 40px;
   }
 
   #välj-css {
@@ -137,11 +137,15 @@ header nav a:hover {
   height: 100vh;
 }
 
+.top-section h1 {
+  padding: 10px;
+}
+
 .blur {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.267);
   border-radius: 10px;
-  padding: 20px;
+  padding: 40px;
   margin: 100px 25%;
 }
 
@@ -228,7 +232,6 @@ footer {
 
 footer h2 {
   font-size: 0.8em;
-
 }
 
 footer a {
@@ -244,7 +247,6 @@ footer a {
 
 .social-media {
   display: flex;
-
 }
 
 @media only screen and (max-width: 460px) {
