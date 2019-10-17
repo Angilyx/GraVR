@@ -39,7 +39,7 @@ main {}
 }
 
 .koncept-image {
-	order: 1;
+
 	width: 200px;
 }
 
@@ -57,4 +57,13 @@ main {}
 
 .koncept-section2 p {
 	width: 500px;
+}
+
+.koncept-1,
+.koncept-2,
+.koncept-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
