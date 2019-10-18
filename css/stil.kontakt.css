@@ -5,6 +5,10 @@ body {}
 .container {}
 
 main {}
+h3 {
+  text-align: left;
+  margin: 10px 0;
+}
 
 .top-section {
 	background: url("../img/banner2.jpg") center no-repeat fixed;
@@ -67,28 +71,15 @@ input[type="submit"] {
 
 .misc-kontakt {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	grid-column: 2;
 	flex-direction: column;
-}
-
-.e-mail,
-.e-mail .ikon,
-.telefon {
-	margin: 10px;
 }
 
 .e-mail,
 .telefon {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-}
-
-.ikon {
-	width: 25px;
-	margin: 20px 0 0 20px;
 }
 
 .social-media .ikon {
