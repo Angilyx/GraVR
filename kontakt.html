@@ -2,21 +2,22 @@
 <html lang="sv">
 
 <head>
-    <meta charset="utf-8">
+    <meta  charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GraVR</title>
     <link href="css/stil.css" rel="stylesheet" type="text/css">
     <link href="css/stil.kontakt.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Merriweather:400,700,900&display=swap"
-        rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <article class="container">
+  <a id="top"></a>
+    
         <!--HEADER-->
         <header>
-            <a href="index.html"><img src="img/logo.svg" width="300px" height="99px" alt="logo" class="logo"></a>
+            <a href="index.html"><img src="img/logo.svg" width="300" height="99" alt="logo" class="logo"></a>
             <nav>
                 <ul class="menu">
                     <li><a href="index.html">Hem</a></li>
@@ -28,6 +29,8 @@
         </header>
         <!--MAIN CONTENT-->
         <main>
+		<article class="container">
+		<h1>Kontakt</h1>
             <!--Main-content-->
             <div id="välj-css">
                 <a href="#" onclick="javascript:changeTextSize()"><img src="img/forstoringsglas.png"
@@ -37,17 +40,18 @@
             </div>
             <div class="top-section">
                 <div class="blur">
-                    <h1>Kontakta Oss</h1>
+                    <h2>Kontakta Oss</h2>
                     <article>
+						<h3>Info:</h3>
                         <p>Vi på GraVR finns alltid där för dig
                             </p>
                     </article>
                 </div>
             </div>
             <section class="kontakt-section">
-                <h1>Kontakt</h1>
+                <h2>Kontakt</h2>
                 <article class="kontakt">
-                    <h2>Skriv till oss!</h2>
+                    <h3>Skriv till oss!</h3>
                     <form action="action_page.php">
                         <label for="namn">Ditt Namn</label>
                         <input type="text" id="namn" name="namn" placeholder="Ditt namn.."> <br>
@@ -82,6 +86,7 @@
                     </div>
                 </article>
             </section>
+			</article>
         </main>
         <!--Footer-->
         <footer>
@@ -93,8 +98,8 @@
                 <img src="img/instagram.png" alt="instagram ikon." class="ikon" />
             </div>
         </footer>
-        <script src="js/css.script.js" charset="UTF-8"></script>
-    </article>
+        <script src="js/css.script.js"></script>
+    
 </body>
 
 </html>
