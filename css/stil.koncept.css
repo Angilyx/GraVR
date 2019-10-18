@@ -21,6 +21,7 @@ main {}
 
 .koncept-section1 h1,
 .koncept-section2 h1 {
+	order: 1;
 	margin: 40px 0;
 	font-size: 1.2em;
 	color: rgb(82, 82, 82);
