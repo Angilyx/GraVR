@@ -34,7 +34,7 @@ function image() {
 }
 
 
-//NEXT + PREV HOW IT WORKS
+//NEXT + PREV HOW IT WORKS; Explanation by Sasie
 //There are 3 elements with the class .customize-item
 var items =document.querySelectorAll(".customize-item");
 
