@@ -1,2 +1,19 @@
 @charset "UTF-8";
-header, .top-section, main, h1, h2, .main-section, .produkt-wrapper, #customize-container, footer, .container, .koncept-section1, .koncept-section2, a, .blur{background-image:none !important; background-color:yellow !important; color:black !important;}
+header,
+.top-section,
+main,
+h1,
+h2,
+.main-section,
+.produkt-wrapper,
+#customize-container,
+footer,
+.container,
+.koncept-section1,
+.koncept-section2,
+a,
+.blur {
+	background-image: none !important;
+	background-color: yellow !important;
+	color: black !important;
+}

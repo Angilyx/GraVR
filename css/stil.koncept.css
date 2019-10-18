@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body {}
 
 .container {}
@@ -36,7 +35,6 @@ main {}
 }
 
 .koncept-image {
-
 	width: 100px;
 }
 
@@ -44,7 +42,6 @@ main {}
 	width: 300px;
 	padding: 20px;
 }
-
 
 .koncept-1,
 .koncept-2,
