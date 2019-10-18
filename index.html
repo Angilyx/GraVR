@@ -2,21 +2,21 @@
 <html lang="sv">
 
 <head>
-  <meta charset="utf-8" />
+  <meta  charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GraVR</title>
   <link href="css/stil.css" rel="stylesheet" type="text/css" />
   <link href="css/stil.skraddarsy.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Merriweather:400,700,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--HEADER-->
-  <a name="top"></a>
+  <a id="top"></a>
   <header>
-    <a href="index.html"><img src="img/logo.svg" width="300px" height="99px" alt="logo" class="logo" /></a>
+    <a href="index.html"><img src="img/logo.svg" width="300" height="99" alt="logo" class="logo" /></a>
     <nav>
       <ul class="menu">
         <li><a href="index.html">Hem</a></li>
@@ -39,6 +39,7 @@
       <div class="blur">
         <h1>Vad är GraVR</h1>
         <article>
+			<h2>Från koncept till tjänst</h2>
           <p>
             GraVR är ett koncept där gravstenar och gravplatser tar form i den virtuella världen. Här på vår webbsida
             kan du designa och anpassa en digital gravsten utefter era egna önskemål. Gravstenen/Gravplatsen kommer
@@ -49,9 +50,9 @@
     </div>
     <!--Main-Section-->
     <section class="main-section">
-      <h1>Gravstenar</h1>
+      <h2>Gravstenar</h2>
       <article class="produkt-wrapper">
-        <h2>Exempel på design</h2>
+        <h3>Exempel på design</h3>
         <div class="produkt produkt1"></div>
         <div class="produkt produkt2"></div>
         <div class="produkt produkt3"></div>
@@ -61,8 +62,8 @@
       </article>
     </section>
     <article id="customize-container">
-      <h1>Din gravsten</h1>
-      <h2>Skräddarsy din virtuella gravsten!</h2>
+      <h2>Din gravsten</h2>
+      <h3>Skräddarsy din virtuella gravsten!</h3>
       <div id="customize-section">
         <div id="customize-grave">
           <div id="circle" class="customize-item">
@@ -86,13 +87,19 @@
           </div>
           <div>
             <label for="customize-color">Färg på Grav: </label>
-            <input id="customize-color" onchange="javascript:color();" type="color" name="bakgrund-color"
+            <input id="customize-color" type="text" name="bakgrund-color"
               value="#000000" />
+			  <button type="button" class="greener-button" onclick="javascript:color();">
+              Testa
+            </button>
           </div>
           <div>
             <label for="customize-color">Färg på text: </label>
-            <input id="customize-text-color" onchange="javascript:colorText();" type="color" name="textcolor"
+            <input id="customize-text-color" type="text" name="textcolor"
               value="#ffffff" />
+			  <button type="button" class="greener-button" onclick="javascript:colorText()">
+              Testa
+            </button>
           </div>
           <div>
             <label for="custom-image">Lägg till en bakgrund!</label>
@@ -122,8 +129,8 @@
       <img src="img/instagram.png" alt="instagram ikon." class="ikon" />
     </div>
   </footer>
-  <script src="js/script.js" charset="UTF-8"></script>
-  <script src="js/css.script.js" charset="UTF-8"></script>
+  <script src="js/script.js"></script>
+  <script src="js/css.script.js"></script>
 </body>
 
 </html>

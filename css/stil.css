@@ -93,19 +93,19 @@ header nav a:hover {
   background-color: #4caf50;
 }
 
-#välj-css {
+#valj-css {
   position: fixed;
   z-index: 3;
   right: 10px;
   top: 5px;
 }
 
-#välj-css a {
+#valj-css a {
   padding: 15px;
   text-decoration: none;
 }
 
-#välj-css img {
+#valj-css img {
   position: absolute;
   margin-left: -25px;
 }
@@ -126,7 +126,7 @@ header nav a:hover {
     padding: 40px;
   }
 
-  #välj-css {
+  #valj-css {
     background-color: white;
     padding: 5px 5px 5px 20px;
     top: 0;
@@ -152,8 +152,7 @@ header nav a:hover {
 }
 
 .blur {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.555);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   padding: 40px;
   margin: 100px 25%;
