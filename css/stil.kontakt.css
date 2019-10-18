@@ -1,13 +1,13 @@
 @charset "UTF-8";
-
 body {}
 
 .container {}
 
 main {}
+
 h3 {
-  text-align: left;
-  margin: 10px 0;
+	text-align: left;
+	margin: 10px 0;
 }
 
 .top-section {
@@ -23,7 +23,7 @@ h3 {
 	justify-content: center;
 }
 
-.kontakt-section h1{
+.kontakt-section h1 {
 	width: 100%;
 	text-align: center;
 	padding-top: 50px;
@@ -36,8 +36,6 @@ h3 {
 	text-align: left;
 	text-transform: uppercase;
 }
-
-
 
 .kontakt label {
 	padding-left: 5px;
@@ -65,7 +63,9 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
+
 /* kontakt Form End */
+
 
 /* Misc-kontakt Start */
 

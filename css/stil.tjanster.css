@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body {}
 
 .container {}
@@ -7,10 +6,9 @@ body {}
 main {}
 
 h3 {
-  text-align: left;
-  margin: 10px 20px;
+	text-align: left;
+	margin: 10px 20px;
 }
-
 
 .top-section {
 	background: url("../img/banner4.jpg") center no-repeat fixed;
